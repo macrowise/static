@@ -11,6 +11,9 @@ collections:
     folder: "content/_index.md"
     create: false
     fields:
+      - label: "Title"
+        name: "title"
+        widget: "hidden"
       - label: "Body"
         name: "body"
         widget: "markdown"
