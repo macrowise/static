@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: __BRANCH__
+  branch: main
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -13,6 +13,12 @@ collections:
     fields:
       - label: "Title"
         name: "title"
+        widget: "string"
+      - label: "Header"
+        name: "header"
+        widget: "string"
+      - label: "Subheader"
+        name: "subheader"
         widget: "string"
       - label: "Body"
         name: "body"
