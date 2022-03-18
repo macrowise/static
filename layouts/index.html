@@ -1,7 +1,18 @@
 {{ define "main" }}
-    <h1>{{ .Params.header }}</h1>
-    <h2>{{ .Params.subheader }}</h2>
-    <div>
-        {{ .Content }}
-    </div>
+<div class="flex flex-col justify-center items-center text-center py-64 px-6">
+  <h1 class="text-2xl font-questrial md:text-3xl">
+    En Scale nos preparamos para el cambio y te acompañamos a gestionarlo
+  </h1>
+  <div class="flex flex-col space-y-6 mt-10 md:flex-row md:space-x-6 md:space-y-0">
+    <button class="bg-scale-yellow-300 text-scale-dark-blue text-xl px-6 py-2">Agenda una llamada</button>
+    <a
+      href=""
+      class="bg-scale-yellow-300 text-scale-dark-blue text-xl px-6 py-2"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Reproduce el video
+    </a>
+  </div>
+</div>
 {{ end }}
