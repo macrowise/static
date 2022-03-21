@@ -22,5 +22,8 @@
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
     "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0"
   }
 }

@@ -18,12 +18,14 @@
     <link rel="stylesheet" href="{{ $styles.Permalink }}">
 </head>
 <body class="bg-scale-dark-blue text-white font-source-sans-pro">
-    <nav class="px-6 py-4">
-      <img class="h-16 w-auto" src='{{ "images/scale-logo.jpeg" | absURL }}' alt="">
-    </nav>
-    <main>
-        {{ block "main" . }}{{ end }}
-    </main>
+    <div class="max-w-screen-2xl mx-auto">
+      <nav class="px-6 py-4">
+        <img class="h-16 w-auto" src='{{ "images/scale-logo.jpeg" | absURL }}' alt="">
+      </nav>
+      <main>
+          {{ block "main" . }}{{ end }}
+      </main>
+    </div>
     <script>
         if (window.netlifyIdentity) {
           window.netlifyIdentity.on("init", function (user) {
