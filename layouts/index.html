@@ -1,26 +1,30 @@
 {{ define "main" }}
-<div class="text-center py-12 px-6">
-  <div class="max-w-xl mx-auto">
-    <div class="aspect-w-16 aspect-h-9">
-      <iframe src="https://www.youtube.com/embed/cBRNQMolTPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<section class="text-center py-12 px-6 bg-scale-dark-blue text-white">
+  <div class="max-w-screen-2xl mx-auto">
+    <div class="max-w-xl mx-auto">
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe src="https://www.youtube.com/embed/cBRNQMolTPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="max-w-5xl mx-auto mt-12">
+      <h1 class="text-2xl font-questrial md:text-3xl">
+        En Scale nos preparamos para el cambio y te acompañamos a gestionarlo
+      </h1>
+      <a href="https://meetings.hubspot.com/julian-cardona2" target="_blank" rel="noopener noreferrer" class="mt-8 inline-block bg-scale-yellow-300 text-scale-dark-blue text-xl px-6 py-2">Agenda una llamada</a>
     </div>
   </div>
-  <div class="max-w-5xl mx-auto mt-12">
-    <h1 class="text-2xl font-questrial md:text-3xl">
-      En Scale nos preparamos para el cambio y te acompañamos a gestionarlo
-    </h1>
-    <a href="https://meetings.hubspot.com/julian-cardona2" target="_blank" rel="noopener noreferrer" class="mt-8 inline-block bg-scale-yellow-300 text-scale-dark-blue text-xl px-6 py-2">Agenda una llamada</a>
-    <div class="mt-8">
-      <h2 class="text-scale-yellow-300 text-xl md:text-2xl">Déjanos llamarte</h2>
-      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-      <script>
-        hbspt.forms.create({
-          region: "na1",
-          portalId: "21505247",
-          formId: "ef597696-c24d-4b9c-b48e-2bcb24eb3a49"
-          });
-      </script>
-    </div>
+</section>
+<section class="py-12 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-scale-dark-blue text-xl md:text-2xl font-bold mb-8">Déjanos llamarte</h2>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "21505247",
+        formId: "ef597696-c24d-4b9c-b48e-2bcb24eb3a49"
+        });
+    </script>
   </div>
-</div>
+</section>
 {{ end }}
