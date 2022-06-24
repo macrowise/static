@@ -9,12 +9,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'scale-dark-blue': '#07131e',
-        'scale-yellow-300': '#ffc300'
+        charcoal: '#33434f',
+        'rich-black': '#10202c',
+        'granny-smith-apple': '#AFD398',
+        'ghost-white': '#EAEDF3',
+        'dark-jungle-green': '#0C160E',
+        'steel-teal': '#6C8989',
+        'black-coral': '#455662',
+        'deep-champagne': '#F6D4AA',
+        'smoked-green': '#6C8c8c'
       },
       fontFamily: {
-        questrial: ['Questrial', 'sans-serif'],
-        'source-sans-pro': ['"Source Sans Pro"', 'sans-serif']
+        'proxima-nova': ['"Proxima Nova"', 'sans-serif'],
+        avenir: ['Avenir', 'sans-serif']
+      },
+      fontSize: {
+        'xxs': '10px'
       }
     },
   },

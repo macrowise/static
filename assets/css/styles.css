@@ -1,3 +1,31 @@
 @tailwind base;
+
+@font-face {
+  font-family: Avenir;
+  src: url(/fonts/Avenir.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(/fonts/Proxima-Nova.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(/fonts/Proxima-Nova-Bold.ttf);
+  font-weight: 700;
+}
+
 @tailwind components;
+
+.button {
+  @apply inline-flex font-avenir text-xs items-center gap-3 rounded-3xl py-1 px-4 hover:shadow-xl;
+}
+
+.button-icon {
+  @apply w-6 flex-shrink-0;
+}
+
 @tailwind utilities;

@@ -17,15 +17,11 @@
     {{ $styles := resources.Get "css/styles.css" | postCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}">
 </head>
-<body class="font-source-sans-pro">
-    <nav class="px-6 py-4 bg-scale-dark-blue">
-      <div class="max-w-screen-2xl mx-auto">
-        <img class="h-16 w-auto" src='{{ "images/scale-logo.jpeg" | absURL }}' alt="">
-      </div>
-    </nav>
+<body class="font-proxima-nova text-rich-black">
     <main>
       {{ block "main" . }}{{ end }}
     </main>
+    {{ partial "partials/footer.html" . }}
     <script>
         if (window.netlifyIdentity) {
           window.netlifyIdentity.on("init", function (user) {

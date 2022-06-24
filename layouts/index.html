@@ -1,30 +1,260 @@
 {{ define "main" }}
-<section class="text-center py-12 px-6 bg-scale-dark-blue text-white">
-  <div class="max-w-screen-2xl mx-auto">
-    <div class="max-w-xl mx-auto">
-      <div class="aspect-w-16 aspect-h-9">
-        <iframe src="https://www.youtube.com/embed/1of7UK7zHAQ?ab_channel=Scale" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="bg-charcoal text-white px-6 py-2">
+  <div class="max-w-screen-2xl mx-auto text-center">
+    <h2 class="uppercase tracking-widest text-xl">Multiplica tu patrimonio invirtiendo en acciones internacionales</h2>
+  </div>
+</div>
+<section class="px-6 py-16 bg-center bg-no-repeat bg-cover" style="background-image: url(/images/main-banner-bg.png);">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col-reverse lg:flex-row">
+      <div class="w-full mt-12 lg:w-1/2 lg:mt-0">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe src="https://www.youtube.com/embed/1of7UK7zHAQ?ab_channel=Scale" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
-    </div>
-    <div class="max-w-5xl mx-auto mt-12">
-      <h1 class="text-2xl font-questrial md:text-3xl">
-        En Scale nos preparamos para el cambio y te acompañamos a gestionarlo
-      </h1>
-      <a href="https://meetings.hubspot.com/julian-cardona2" target="_blank" rel="noopener noreferrer" class="mt-8 inline-block bg-scale-yellow-300 text-scale-dark-blue text-xl px-6 py-2">Agenda una llamada</a>
+      <div class="w-full lg:w-1/2">
+        <div class="h-full max-w-lg mx-auto flex flex-col justify-between">
+          <div></div>
+          <div class="flex flex-col items-center gap-6 sm:flex-row">
+            <div class="flex-shrink-0">
+              <img class="w-32" src='{{ "images/scale-premium.png" | absURL }}' alt="">
+            </div>
+            <p class="text-xl font-questrial px-6 py-2 sm:border-l-2 sm:border-white">
+              El servicio de información y acompañamiento para invertir en las empresas que están transformando el mundo.
+            </p>
+          </div>
+          <a href="https://meetings.hubspot.com/julian-cardona2" targer="_blank" title="Agenda una llamada" class="button self-start mt-6 lg:mt-0 bg-black-coral text-white">
+            <img class="button-icon" src='{{ "images/icon-phone-call.png" | absURL }}' alt="">
+            <span>Agendar una llamada</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<section class="py-12 px-6">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-scale-dark-blue text-xl md:text-2xl font-bold mb-8">Déjanos llamarte</h2>
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-    <script>
-      hbspt.forms.create({
-        region: "na1",
-        portalId: "21505247",
-        formId: "ef597696-c24d-4b9c-b48e-2bcb24eb3a49"
-        });
-    </script>
+<section class="px-6 py-16 bg-bottom bg-no-repeat bg-cover" style="background-image: url(/images/banner-chart.png);">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col items-center gap-4 md:gap-12 max-w-2xl text-lg md:flex-row">
+      <img class="w-56" src='{{ "images/scale-premium-fill.png" | absURL }}' alt="">
+      <p>Crecer el capital invertido <span class="font-bold">3 veces en 5 años</span> mediante un proceso de selección de acciones de empresas, EFTs y criptoactivos.</p>
+    </div>
+    <div class="mt-6">
+      <img src='{{ "images/chart.png" | absURL }}' alt="" />
+      <div class="bg-white text-sm py-2 px-4 max-w-sm mx-auto">Este proceso nos permitirá capitalizar las megatendencias tecnológicas y de transformación en el mundo y <span class="font-bold">creemos que:</span></div>
+    </div>
+    <div class="mt-12 text-xl flex flex-col gap-4 md:flex-row md:justify-between md:gap-12">
+      <div class="md:w-1/3">
+        <p><span class="font-bold">El mayor riesgo</span> para un latinoamericano es no invertir y <span class="font-bold">tener todo en moneda local</span> (pesos, reales, etc)</p>
+      </div>
+      <div class="text-center md:text-left md:w-56">
+        <img class="w-28 mx-auto" src='{{ "images/icon-globe-chart.png" | absURL }}' alt="">
+        <p>Inversión en el mercado internacional de acciones</p>
+      </div>
+      <div class="text-center md:text-left md:w-56">
+        <img class="w-28 mx-auto" src='{{ "images/icon-warning-chart.png" | absURL }}' alt="">
+        <p>Gestión de riesgo, estrategias de compra y venta</p>
+      </div>
+    </div>
+    <div class="flex md:gap-12">
+      <div class="hidden md:block md:w-1/3"></div>
+      <div class="bg-white text-sm py-2 px-4 max-w-sm mx-auto mt-4">Este proceso le permitirá a nuestros clientes mantener su estilo de vida en el futuro.</div>
+    </div>
+    <a href="https://meetings.hubspot.com/julian-cardona2" target="_blank" title="Quiero ganar dinero invirtiendo en las tecnologías que cambian el mundo" class="button bg-black-coral text-white mt-8">
+      <img class="button-icon" src='{{ "images/icon-chart.png" | absURL }}' alt="">
+      <span>Quiero invertir en bolsa con <br> gestión de riesgo</span>
+    </a>
+  </div>
+</section>
+<!-- Servicios -->
+<section class="px-6 py-16 bg-bottom bg-no-repeat bg-cover" style="background-image: url(/images/banner-services.png);">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col-reverse gap-4 sm:gap-0 sm:flex-row">
+      <div class="sm:w-1/2">
+        <p class="max-w-md text-2xl tracking-wider">
+          Servicio diseñado para <span class="font-bold">personas que buscan gestionar sus inversiones</span> en brokers de bolsa en USA.
+        </p>
+      </div>
+      <div class="sm:w-1/2">
+        <img class="ml-auto w-full" src='{{ "images/nyc.png" | absURL }}' />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Metodología -->
+<section class="px-6 py-16 bg-bottom bg-no-repeat bg-cover" style="background-image: url(/images/banner-metodology.png);">
+  <div class="max-w-6xl mx-auto">
+    <div class="max-w-sm">
+      <h2 class="font-bold font-source-sans-pro text-2xl tracking-widest">Metodología</h2>
+      <p class="text-xl leading-tight">para selección de acciones</p>
+    </div>
+    <div class="max-w-4xl mx-auto mt-12">
+      <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-12">
+        <div class="max-w-md space-y-4 text-xl">
+          <div class="flex flex-col items-center sm:flex-row">
+            <img class="w-44" src='{{ "images/icon-exchange.png" | absURL }}' alt="">
+            <p>Identificamos <span class="font-bold">tensiones y cambios</span> relevantes <span class="font-bold">a nivel global</span>.</p>
+          </div>
+          <div class="flex flex-col items-center sm:flex-row">
+            <img class="w-44" src='{{ "images/icon-weighing-scales.png" | absURL }}' alt="">
+            <p>Nos enfocamos en tecnologías y sectores con alto potencial de ser los ganadores en el cambio.</p>
+          </div>
+          <div class="flex flex-col items-center sm:flex-row">
+            <img class="w-44" src='{{ "images/icon-pacman.png" | absURL }}' alt="">
+            <p>Foco en empresas que tienen modelos de negocio maduros y probados, más un alto potencial de crecimiento en los próximos años.</p>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <a href="https://meetings.hubspot.com/julian-cardona2" target="_blank" title="Quiero ganar dinero invirtiendo en las tecnologías que cambian el mundo" class="button bg-black-coral text-white">
+            <img class="button-icon" src='{{ "images/icon-globe.png" | absURL }}' alt="">
+            <span>Quiero ganar dinero invirtiendo en las <br />tecnologías que cambian el mundo</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Suscripción anual -->
+<section class="px-6 py-16 bg-cover bg-center bg-no-repeat" style="background-image: url(/images/banner-subscription.png);">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col items-center gap-16 md:flex-row">
+      <div class="bg-ghost-white shadow-2xl text-lg px-6 py-4 md:w-1/2">
+        <div class="flex items-center gap-4">
+          <img class="w-56" src='{{ "images/scale-premium-fill.png" | absURL }}' alt="">
+          <p>Suscripción anual</p>
+        </div>
+        <ul class="space-y-4 mt-4">
+          <li class="border-b border-black-coral flex items-center space-x-2 leading-tight justify-between pb-2">
+            <p class="max-w-sm">1. Proceso de onboarding: Apertura de cuenta y objetivos de inversión</p>
+            <img class="w-4" src='{{ "images/icon-check.png" | absURL }}' />
+          </li>
+          <li class="border-b border-black-coral flex items-center space-x-2 leading-tight justify-between pb-2">
+            <p class="max-w-sm">2. Diseño del plan de inversión</p>
+            <img class="w-4" src='{{ "images/icon-check.png" | absURL }}' />
+          </li>
+          <li class="border-b border-black-coral flex items-center space-x-2 leading-tight justify-between pb-2">
+            <p class="max-w-sm">
+              3. Acompañamiento en la ejecución del plan y gestión de las plataformas
+            </p>
+            <img class="w-4" src='{{ "images/icon-check.png" | absURL }}' />
+          </li>
+          <li class="border-b border-black-coral flex items-center space-x-2 leading-tight justify-between pb-2">
+            <p class="max-w-sm">4. Sesión de seguimiento trimestral</p>
+            <img class="w-4" src='{{ "images/icon-check.png" | absURL }}' />
+          </li>
+          <li class="flex items-center space-x-2 leading-tight justify-between pb-2">
+            <p class="max-w-sm">5. Entrega mensual del newsletter Connecting the dots</p>
+            <img class="w-4" src='{{ "images/icon-check.png" | absURL }}' />
+          </li>
+        </ul>
+      </div>
+      <div class="flex-shrink-0">
+        <a href="https://meetings.hubspot.com/julian-cardona2" target="_blank" title="Quiero cubrir mi estilo de vida en el futuro" class="button bg-smoked-green text-white">
+          <img class="w-8 flex-shrink-0" src='{{ "images/icon-bars-axis.png" | absURL }}' alt="">
+          <span>Quiero cubrir mi estilo de vida <br /> en el futuro.</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Nos diferencia -->
+<section class="px-6 py-16 bg-center bg-no-repeat bg-cover" style="background-image: url(/images/banner-perks.png);">
+  <div class="max-w-6xl mx-auto text-white">
+    <h2 class="font-bold font-source-sans-pro text-2xl tracking-widest">Nos diferencia</h2>
+    <div class="grid gap-6 mt-6 text-center sm:text-left sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:mt-16">
+      <div class="bg-black-coral bg-opacity-40 p-2">
+        <img class="mx-auto sm:m-0 w-28" src='{{ "images/icon-touch-gold.png" | absURL }}' alt="">
+        <p>
+          Foco en la acción. Los análisis tienen accionables caros.
+        </p>
+      </div>
+      <div class="bg-black-coral bg-opacity-80 p-2">
+        <img class="mx-auto sm:m-0 w-28" src='{{ "images/icon-keyring-gold.png" | absURL }}' alt="">
+        <p>
+          Existe un modelo de selección de activos, evitando la diversificación.
+        </p>
+      </div>
+      <div class="bg-black-coral bg-opacity-80 p-2">
+        <img class="mx-auto sm:m-0 w-28" src='{{ "images/icon-binary-gold.png" | absURL }}' alt="">
+        <p>
+          Uso de algoritmos de evaluación propietarios con Inteligencia Artificial.
+        </p>
+      </div>
+      <div class="bg-black-coral bg-opacity-80 p-2">
+        <img class="mx-auto sm:m-0 w-28" src='{{ "images/icon-gc-gold.png" | absURL }}' alt="">
+        <p>
+          Estrategia de inversión enfocada en empresas GameChangers.
+        </p>
+      </div>
+      <div class="bg-black-coral bg-opacity-80 p-2">
+        <img class="mx-auto sm:m-0 w-28" src='{{ "images/icon-card-gold.png" | absURL }}' alt="">
+        <p>
+          Atención personalizada, siempre por humanos.
+        </p>
+      </div>
+      <div class="bg-black-coral bg-opacity-80 p-2">
+        <img class="mx-auto sm:m-0 w-28" src='{{ "images/icon-message-gold.png" | absURL }}' alt="">
+        <p>
+          Resolución de dudas por diferentes canales.
+        </p>
+      </div>
+    </div>
+    <div class="mt-12 px-8 py-8 bg-center bg-no-repeat bg-cover" style="background-image: url(/images/banner-perks-bg.png);">
+      <img class="w-48" src='{{ "images/label-game-changers.png" | absURL }}' alt="">
+      <div class="flex flex-col justify-center items-center gap-12 mt-12 md:flex-row md:gap-24">
+        <img class="w-72" src='{{ "images/icon-gc-sectors.png" | absURL }}' alt="">
+        <div class="flex-shrink-0">
+          <a href="https://meetings.hubspot.com/julian-cardona2" target="_blank" title="Quiero cubrir mi estilo de vida en el futuro" class="button bg-white text-rich-black">
+            <img class="w-8 flex-shrink-0" src='{{ "images/icon-globe-dark.png" | absURL }}' alt="">
+            <span>Quiero invertir en las tecnologías <br />que cambian el mundo</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Inversiones de largo plazo -->
+<section class="px-6 py-16 bg-bottom bg-no-repeat bg-cover" style="background-image: url(/images/banner-investment.png);">
+  <div class="max-w-6xl mx-auto">
+    <div class="max-w-sm">
+      <h2 class="font-bold font-source-sans-pro text-2xl tracking-widest">Inversiones de largo plazo:</h2>
+      <p class="text-xl leading-tight">Al menos 3 años para lograr rendimientos y gestionar la volatilidad.</p>
+    </div>
+    <div class="grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-5 lg:mt-16">
+      <div class="space-y-6">
+        <img class="mx-auto sm:m-0" src='{{ "images/icon-bag-of-money.png" | absURL }}' alt="">
+        <p>
+          Invertir en bolsa demanda conocimiento, inversión de tiempo y análisis para ser rentable.
+        </p>
+      </div>
+      <div class="space-y-6">
+        <img class="mx-auto sm:m-0" src='{{ "images/icon-stocks.png" | absURL }}' alt="">
+        <p>
+          Invertir en bolsa de valores trae riesgos de pérdida debido a la volatilidad natural del mercado.
+        </p>
+      </div>
+      <div class="space-y-6">
+        <img class="mx-auto sm:m-0" src='{{ "images/icon-gc.png" | absURL }}' alt="">
+        <p>
+          Nuestro equipo de relación con clientes son inversionistas en la bolsa de valores y lo hacen en GameChangers con la metodología SCALE.
+        </p>
+      </div>
+      <div class="space-y-6">
+        <img class="mx-auto sm:m-0" src='{{ "images/icon-townhall.png" | absURL }}' alt="">
+        <p>
+          Nuestro equipo de relación con clientes tienen experiencia empresarial y tienen objetivos similares a los clientes de SCALE.
+        </p>
+      </div>
+      <div class="space-y-6">
+        <img class="mx-auto sm:m-0" src='{{ "images/icon-user.png" | absURL }}' alt="">
+        <p>
+          SCALE te asigna un gerente de cuenta. Una persona del equipo de relación con clientes será su punto de contacto principal.
+        </p>
+      </div>
+    </div>
+    <a href="https://meetings.hubspot.com/julian-cardona2" target="_blank" title="Quiero que mis ahorros crezcan x3 en 5 años" class="button text-white bg-smoked-green mt-8 lg:mt-16">
+      <img class="button-icon" src='{{ "images/icon-calendar.png" | absURL }}' alt="">
+      <span>Quiero que mis ahorros<br />crezcan x3 en 5 años</span>
+    </a>
   </div>
 </section>
 {{ end }}
