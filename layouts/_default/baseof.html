@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="{{ $styles.Permalink }}">
 </head>
 <body class="font-proxima-nova text-rich-black">
-    <main>
-      <div id="curtain" class="fixed top-0 left-0 w-full h-full bg-center bg-cover bg-no-repeat z-50" style="background-image: url(/images/curtain.jpg);"></div>
+    <div id="curtain" class="fixed top-0 left-0 w-full h-full bg-center bg-cover bg-no-repeat z-50" style="background-image: url(/images/curtain.jpg);"></div>
+    <main id="main" class="opacity-0">
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "partials/footer.html" . }}
