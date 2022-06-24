@@ -20,6 +20,20 @@
 
 @tailwind components;
 
+#curtain {
+  animation: fade 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .button {
   @apply inline-flex font-avenir text-xs items-center gap-3 rounded-3xl py-1 px-4 hover:shadow-xl;
 }
