@@ -25,6 +25,9 @@ module.exports = {
       },
       fontSize: {
         'xxs': '10px'
+      },
+      backgroundSize: {
+        '0': 0
       }
     },
   },
