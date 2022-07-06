@@ -62,4 +62,20 @@
   height: 100%;
 }
 
+.quoted {
+  @apply relative;
+}
+
+.quoted::after {
+  @apply absolute -bottom-1 text-smoked-green;
+  content: '\201D';
+  font-size: 40px;
+}
+
+.quoted::before {
+  @apply absolute -top-3 left-0 text-smoked-green;
+  content: '\201c';
+  font-size: 40px;
+}
+
 @tailwind utilities;
