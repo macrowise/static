@@ -42,4 +42,24 @@
   @apply w-6 flex-shrink-0;
 }
 
+.cloud {
+  @apply relative;
+}
+
+.cloud::after {
+  @apply absolute right-0 rounded-full h-full bg-white;
+  content: '';
+  width: 6px;
+  top: -8px;
+}
+
+.cloud::before {
+  @apply absolute border-transparent border-8;
+  content: '';
+  border-right-color: #ffffff;
+  right: 5px;
+  top: -8px;
+  height: 100%;
+}
+
 @tailwind utilities;
