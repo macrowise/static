@@ -1,3 +1,81 @@
 @tailwind base;
+
+@font-face {
+  font-family: Avenir;
+  src: url(/fonts/Avenir.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(/fonts/Proxima-Nova.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(/fonts/Proxima-Nova-Bold.ttf);
+  font-weight: 700;
+}
+
 @tailwind components;
+
+#curtain {
+  animation: fade 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.button {
+  @apply inline-flex font-avenir text-xs items-center gap-3 rounded-3xl py-1 px-4 hover:shadow-xl;
+}
+
+.button-icon {
+  @apply w-6 flex-shrink-0;
+}
+
+.cloud {
+  @apply relative;
+}
+
+.cloud::after {
+  @apply absolute right-0 rounded-full h-full bg-white;
+  content: '';
+  width: 6px;
+  top: -8px;
+}
+
+.cloud::before {
+  @apply absolute border-transparent border-8;
+  content: '';
+  border-right-color: #ffffff;
+  right: 5px;
+  top: -8px;
+  height: 100%;
+}
+
+.quoted {
+  @apply relative;
+}
+
+.quoted::after {
+  @apply absolute -bottom-1 text-smoked-green;
+  content: '\201D';
+  font-size: 40px;
+}
+
+.quoted::before {
+  @apply absolute -top-3 left-0 text-smoked-green;
+  content: '\201c';
+  font-size: 40px;
+}
+
 @tailwind utilities;
